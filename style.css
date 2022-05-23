@@ -1,0 +1,126 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2{
+    height: 10px;
+    color: rgb(86, 86, 86);
+    width: 140px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 222, 222);
+    opacity: 90%;
+}
+
+.tdl{
+    display: grid;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px #828282;
+}
+
+input{
+    width: 100%; 
+    color: rgb(92, 92, 92);
+    background-color:rgb(255, 255, 255);
+    outline: none;
+    border-color: rgb(255, 255, 255);
+    height: 30px;
+    font-size: large;
+    border-radius: 3.5px;
+    margin-right: 10px;
+    border: 2px solid #dadada;
+}
+
+input:focus{
+    background-color: #e9f2f9;
+    border-color: #9ecaed;
+    box-shadow: 0px 0px 1.5px 1px #9ecaed;
+}
+
+#addbtn{
+    font-weight:bold;
+    height: 33px;
+    color:rgba(255, 255, 255, 0.927);
+    background-color: rgb(33, 181, 77);
+    border: 1px solid rgb(33, 181, 77);
+    border-radius: 3.5px;
+    font-size: 15px;
+}
+
+#savebtn{
+    display: none;
+    font-weight:bold;
+    height: 33px;
+    color:rgba(255, 255, 255, 0.927);
+    background-color: rgb(33, 181, 77);
+    border: 1px solid rgb(33, 181, 77);
+    border-radius: 3.5px;
+    font-size: 15px;
+}
+
+#adddel{
+    display: flex;
+    gap: 5px;
+}
+
+#addbtn:focus{
+    box-shadow: 0 0 5px #92ef93;
+}
+
+#delbtn{
+    height: 33px;
+    width: 82px;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.936);
+    background-color: rgb(236, 55, 64);
+    border: 1px solid rgb(236, 55, 64);
+    border-radius: 3.5px;
+    font-size: 15px;
+}
+
+#delbtn:focus{
+    box-shadow: 0 0 5px #ef9292;
+}
+
+.div{
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+#task{
+    padding-bottom: 20px;
+}
+
+#i1{
+    color: #4599d9;
+}
+
+#i2{
+    color: #db4848;
+}
+
+.todoContainer{
+    color:#535353;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+    margin: 0 18px;
+    height: 35px;
+    background-color: #e6e6e6;
+    gap: 10px;
+    align-items: center;
+}
+
+#idx{
+    color: #404040;
+}
+
+#todo{
+    color: #424242;
+    text-shadow: .1px .5px .5px rgb(130, 130, 130);
+}
