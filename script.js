@@ -12,21 +12,23 @@ let todos = []
 // }
 
 const renderDOM = ()=>{
-    task.innerHTML = todos.map((todo,idx)=>{
-        return `<div id="${idx}" class="todoContainer">
-        <span id="idx">${idx+1+" "}<span id="todo">${todo}</span></span> 
+    task.innerHTML = ''
+    for (let i = 0; i < todos.length; i++){
+        task.innerHTML += `<div id="${i}" class="todoContainer">
+        <span id="idx">${i+1+" "}<span id="todo">${todos[i]}</span></span> 
         <div>
-        <span onclick="edittodo(${idx})">
+        <span onclick="edittodo(${i})">
             <i class="fas fa-edit" id="i1"></i>
         </span>
-        <span onclick="delTodo(${idx})">
+        <span onclick="delTodo(${i})">
             <i class="fas fa-trash-alt" id="i2"></i>
         </span>
         </div>
         </div>`
-    })
+    }
     // localStorage.setItem('todos',JSON.stringify(todos))
 }
+
 const addTodo = ()=>{
     let todo = inp.value
     todos.push(todo) 
